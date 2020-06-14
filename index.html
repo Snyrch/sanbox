@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS-hra</title>
+	<style>
+		body,
+		html {
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			background-color: #122e6d;
+			color: white;
+		}
+
+		#napravo {
+			display: inline-block;
+			text-align: right;
+			float: right;
+		}
+
+		p {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		footer {
+			border-top: 2px solid black;
+		}
+
+		footer a {
+			color: white;
+			text-decoration: none;
+		}
+
+		footer b {
+			color: white;
+			text-decoration: none;
+		}
+
+		h1 {
+			display: block;
+			max-width: 392px;
+			padding-top: 20px;
+			margin: 0px;
+			padding-bottom: 20px;
+			text-align: center;
+			background: transparent;
+			text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+			0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+			font-family: Impact, Charcoal, sans-serif;
+			font-size: 25px;
+			letter-spacing: 2px;
+			word-spacing: 2px;
+			color: #000000;
+			font-weight: 700;
+			font-style: normal;
+			font-variant: normal;
+			text-transform: uppercase;
+			border-bottom: 2px solid black;
+		}
+
+		p {
+			display: block;
+			max-width: 360px;
+		}
+
+		#info {
+			border-bottom: 2px solid black;
+		}
+
+		#stred {
+			display: block;
+			position: fixed;
+			width: auto;
+			min-width: 392px;
+			max-width: 392px;
+			top: 0%;
+			border: 2px solid black;
+			left: calc(50% - 196px);
+			background: #2441a4;
+	</style>
+</head>
+
+<body>
+	<div id="stred">
+		<h1 align="center">JS-Hra</h1>
+		<div id="info">
+			<p>
+				<span align="left">Penize: <span id="penize">100</span>$</span>
+				<span id="msg" align="center"></span>
+				<span id="napravo">Zivoty: <span id="zivoty">100</span></span>
+			</p>
+		</div>
+		<canvas id="mujcanvas" width="390" height="390"></canvas>
+		<footer>
+			<p>
+				Vytvořil <b>Jakub Šnyrch</b> webovky
+				<a href="https://jakubsnyrch.com"><b>Jakubsnyrch.com</b></a>
+			</p>
+		</footer>
+	</div>
+	<script src="src/js-hra.js"></script>
+</body>
+
+</html>
